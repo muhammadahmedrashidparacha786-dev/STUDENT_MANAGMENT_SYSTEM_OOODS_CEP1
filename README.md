@@ -1,164 +1,49 @@
-# Django Student Management System (beta)
-This is a Simple Student Management System Developed for Educational Purpose using Python (Django).
-Feel free to make changes based on your requirements.
+Student Management System
 
-[Project Demo on YouTube](https://www.youtube.com/watch?v=kArCR96m7uo "Django Student Management System Demo")
+This project was developed as part of our OODS CEP (Object-Oriented Design & Software Construction) course.
+It is a fully functional Student Management System enhanced with modern DevOps and MLOps practices.
 
-I've created this project while learnging Django and followed tutorial series from **SuperCoders**
+👨‍💻 Project By:
 
-And if you like this project then ADD a STAR ⭐️  to this project 👆
+MUHAMMAD AHMED RASHID PARACHA (24K-6040)
 
-## Features of this Project
+ASAD AYUB (24K-6067)
 
-### A. Admin Users Can
-1. See Overall Summary Charts of Stuudents Performance, Staffs Perfomrances, Courses, Subjects, Leave, etc.
-2. Manage Staffs (Add, Update and Delete)
-3. Manage Students (Add, Update and Delete)
-4. Manage Course (Add, Update and Delete)
-5. Manage Subjects (Add, Update and Delete)
-6. Manage Sessions (Add, Update and Delete)
-7. View Student Attendance
-8. Review and Reply Student/Staff Feedback
-9. Review (Approve/Reject) Student/Staff Leave
-
-### B. Staff/Teachers Can
-1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
-2. Take/Update Students Attendance
-3. Add/Update Result
-4. Apply for Leave
-5. Send Feedback to HOD
-
-### C. Students Can
-1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
-2. View Attendance
-3. View Result
-4. Apply for Leave
-5. Send Feedback to HOD
+ALI MEHDI (24K-6066)
 
 
-## Support Developer
-1. Subscribe & Share my YouTube Channel - https://bit.ly/vijay-thapa-online-courses
-2. Add a Star 🌟  to this 👆 Repository
+1. Complete Development of the Student Management System
 
+Designed and built a full-featured Student Management System using Django.
 
-## Donate
+Implemented modules for student records, teacher records, attendance, courses, results, and authentication.
 
-**[PayPal](https://bit.ly/support-vijay-thapa)**
+Refactored and improved older components to follow modern OOP and Django best practices.
 
-**[Buy me a Coffee  ☕️](https://www.buymeacoffee.com/vijaythapa)**
+2. DevOps Integration
 
-**Donate by wire transfer:** E-Mail at *donate@vijaythapa.com* for wire transfer details. 
+To modernize the development workflow, we integrated DevOps practices:
 
+Created a Dockerfile to containerize the entire application for easier deployment and environment consistency.
 
-## How to Install and Run this project?
+Set up a GitHub Actions CI pipeline that:
 
-### Pre-Requisites:
-1. Install Git Version Control
-[ https://git-scm.com/ ]
+Automatically runs tests on each push.
 
-2. Install Python Latest Version
-[ https://www.python.org/downloads/ ]
+Ensures code quality and reliability.
 
-3. Install Pip (Package Manager)
-[ https://pip.pypa.io/en/stable/installing/ ]
+Improved developer workflow with automated checks and reproducible builds.
 
-*Alternative to Pip is Homebrew*
+3. MLOps Integration
 
-### Installation
-**1. Create a Folder where you want to save the project**
+We added an intelligent ML component to enhance the system:
 
-**2. Create a Virtual Environment and Activate**
+Developed a Grade Predictor Machine Learning model that predicts student performance.
 
-Install Virtual Environment First
-```
-$  pip install virtualenv
-```
+Added a custom Django management command (retrain_model) that:
 
-Create Virtual Environment
+Automatically retrains the ML model on newly added database entries.
 
-For Windows
-```
-$  python -m venv venv
-```
-For Mac
-```
-$  python3 -m venv venv
-```
+Keeps the predictions accurate and continuously updated.
 
-Activate Virtual Environment
-
-For Windows
-```
-$  source venv/scripts/activate
-```
-
-For Mac
-```
-$  source venv/bin/activate
-```
-
-**3. Clone this project**
-```
-$  git clone https://github.com/vijaythapa333/django-student-management-system.git
-```
-
-Then, Enter the project
-```
-$  cd django-student-management-system
-```
-
-**4. Install Requirements from 'requirements.txt'**
-```python
-$  pip install -r requirements.txt
-```
-
-**5. Add the hosts**
-
-- Got to settings.py file 
-- Then, On allowed hosts, Add [‘*’]. 
-```python
-ALLOWED_HOSTS = ['*']
-```
-*No need to change on Mac.*
-
-
-**6. Now Run Server**
-
-Command for PC:
-```python
-$ python manage.py runserver
-```
-
-Command for Mac:
-```python
-$ python3 manage.py runserver
-```
-
-**7. Login Credentials**
-
-Create Super User (HOD)
-```
-$  python manage.py createsuperuser
-```
-Then Add Email, Username and Password
-
-**or Use Default Credentials**
-
-*For HOD /SuperAdmin*
-Email: admin@gmail.com
-Password: admin
-
-*For Staff*
-Email: staff@gmail.com
-Password: staff
-
-*For Student*
-Email: student@gmail.com
-Password: student
-
-
-
-## For Sponsor or Projects Enquiry
-1. Email - hi@vijaythapa.com
-2. LinkedIn - [vijaythapa](https://www.linkedin.com/in/vijaythapa "Vijay Thapa on LinkedIn")
-
+Implemented a lightweight MLOps loop inside the project to maintain the ML lifecycle.
